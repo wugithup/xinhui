@@ -1,0 +1,37 @@
+<soap:Envelope
+    xmlns:cux="http://xmlns.oracle.com/apps/cux/soaprovider/plsql/cux_0_ws_server_prg/"
+    xmlns:esb="http://w3.ibm.com/gbs/ais/ei/esb"
+    xmlns:inv="http://xmlns.oracle.com/apps/cux/soaprovider/plsql/cux_0_ws_server_prg/invokefmsws/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+      <cux:SOAHeader>
+        <cux:Responsibility>CRC_B06_OIS_S_SUPER</cux:Responsibility>
+        <cux:RespApplication>CUX</cux:RespApplication>
+        <cux:SecurityGroup>STANDARD</cux:SecurityGroup>
+        <cux:NLSLanguage>SIMPLIFIED CHINESE</cux:NLSLanguage>
+        <cux:Org_Id/>
+      </cux:SOAHeader>
+      <wsse:Security env:mustUnderstand="1"
+        xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <wsse:UsernameToken>
+		  <!-- SIT -->
+		   
+          <wsse:Username>05_WS_OIS</wsse:Username>
+          <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">CLONE</wsse:Password>
+          
+          <!-- PROD -->
+          <!--
+          <wsse:Username>05_WS_OIS</wsse:Username>
+          <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">05Crp123456789</wsse:Password>
+          -->
+        </wsse:UsernameToken>
+      </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+      <inv:InputParameters>
+        <inv:P_IFACE_CODE>PIFACECODE</inv:P_IFACE_CODE>
+        <inv:P_BATCH_NUMBER>PBATCHNUMBER</inv:P_BATCH_NUMBER>
+        <inv:P_REQUEST_DATA>PREQUESTDATA</inv:P_REQUEST_DATA>
+      </inv:InputParameters>
+    </soap:Body>
+  </soap:Envelope>

@@ -1,0 +1,22 @@
+<operate>
+	<operate-type>CREATE</operate-type>
+	<user>
+		<reservedField5></reservedField5>
+		<uid>ZHANGZUOWEN</uid>
+		<reservedField4></reservedField4>
+		<meno>Xellerate Users</meno>
+		<startDate>1970-01-01</startDate>
+		<reservedField3></reservedField3>
+		<reservedField2></reservedField2>
+		<empNo>10310034</empNo>
+		<endDate>1970-01-01</endDate>
+		<passWord>325A2CC052914CEEB8C19016C091D2AC</passWord>
+		<email></email>
+		<reservedField1></reservedField1>
+		<displayName>张作文</displayName>
+		<deptId></deptId>
+		<setId></setId>
+		<mobile></mobile>
+	</user>
+	<sn>20170526155338000050</sn>
+</operate>

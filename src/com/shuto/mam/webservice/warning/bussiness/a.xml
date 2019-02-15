@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<result>
+	<result_code>ERROR001</result_code>
+	<result_msg>推送用户不存在</result_msg>
+</result>
